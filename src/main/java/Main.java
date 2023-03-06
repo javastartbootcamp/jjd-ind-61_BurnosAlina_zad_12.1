@@ -8,7 +8,6 @@ class Main {
         MathOperationsReader operationsReader = new MathOperationsReader();
         Calculator calculator = new Calculator();
         try {
-            operationsWriter.writeToFile("1 + 2 \n" + "2 + 2 \n" + "3 - 1", fileName1);
             MathOperation[] mathOperations = operationsReader.read(fileName1);
             Result[] results = calculator.calculateAndPrint(mathOperations);
             String operationWithResults = operationsWriter.buildResultsText(mathOperations, results);
