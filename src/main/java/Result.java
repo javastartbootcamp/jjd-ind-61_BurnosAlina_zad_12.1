@@ -1,20 +1,20 @@
 public class Result {
-    private int result;
+    private double result;
 
     @Override
     public String toString() {
         return " = " + result + "\n";
     }
 
-    public Result(int result) {
+    public Result(double result) {
         this.result = result;
     }
 
-    public int getResult() {
+    public double getResult() {
         return result;
     }
 
-    public void setResult(int result) {
+    public void setResult(double result) {
         this.result = result;
     }
 }

@@ -1,7 +1,7 @@
 public class Calculator {
 
-    private int calculate(int number1, int number2, String mathSymbol) {
-        int result = 0;
+    private double calculate(double number1, double number2, String mathSymbol) {
+        double result = 0;
         switch (mathSymbol) {
             case "+":
                 result = number1 + number2;
@@ -23,7 +23,7 @@ public class Calculator {
     }
 
     Result[] calculateAndPrint(MathOperation[] mathOperations) {
-        int result = 0;
+        double result = 0;
         Result[] results = new Result[mathOperations.length];
         for (int i = 0; i < mathOperations.length; i++) {
             result = calculate(mathOperations[i].getNumber1(), mathOperations[i].getNumber2(),

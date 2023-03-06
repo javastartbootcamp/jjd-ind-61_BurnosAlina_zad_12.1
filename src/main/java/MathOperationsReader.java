@@ -9,9 +9,9 @@ public class MathOperationsReader {
         for (int i = 0; i < linesNumber; i++) {
             String line = reader.readLine();
             String[] mathOperationData = line.split(" ");
-            int number1 = Integer.parseInt(mathOperationData[0]);
+            double number1 = Double.parseDouble(mathOperationData[0]);
             String mathSymbol = mathOperationData[1];
-            int number2 = Integer.parseInt(mathOperationData[2]);
+            double number2 = Double.parseDouble(mathOperationData[2]);
             mathOperations[i] = new MathOperation(number1, number2, mathSymbol);
         }
         return mathOperations;
